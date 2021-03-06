@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
-  <script src="script.js"></script>
-  <title>Jeu de hasard</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Jeu de dé</title>
 </head>
 <body>
+  <div class="ion-padding">
+    <canvas id="jeu" width="1000" height="1000">
+      <canvas id="dé" width="150" height="150"></canvas>
+    </canvas>
+  </div>
   
+  <script src="script.js"></script>
 </body>
 </html>
