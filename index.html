@@ -16,31 +16,35 @@
     <!-- Plateau joueur -->
         <ion-row>
           <ion-col>
-            <div class="player-name" id="nom-1">JOUEUR 1</div>
+            <div class="player-0-panel">
+              <div class="player-name" id="nom-0">JOUEUR 1</div>
+            </div>
           </ion-col>
           <ion-col>
-            <div class="player-name" id="nom-2">JOUEUR 2</div>
+            <div class="player-1-panel">
+              <div class="player-name" id="nom-1">JOUEUR 2</div>
+            </div>
           </ion-col>              
         </ion-row>
         <ion-row>
           <ion-col>
-            <div class="player-score" id="score-1">0</div>
+            <div class="player-0-score" id="score-0">20</div>
           </ion-col>
           <ion-col>
-            <div class="player-score" id="score-2">0</div>
+            <div class="player-1-score" id="score-1">50</div>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <div class="player-current-box" id="current-box-1">
+            <div class="player-current-box" id="current-box-0">
               <div class="player-current-label">RESULTAT</div>
-              <div class="player-current-score" id="current-1">0</div>                  
+              <div class="player-current-score" id="current-0">0</div>                  
             </div>                  
           </ion-col>
           <ion-col>          
-            <div class="player-current-box" id="current-box-2">
+            <div class="player-current-box" id="current-box-1">
               <div class="player-current-label">RESULTAT</div>
-              <div class="player-current-score" id="current-2">0</div>
+              <div class="player-current-score" id="current-1">0</div>
             </div>
             </ion-col>              
           </ion-row>
@@ -54,10 +58,15 @@
             <ion-col>                  
               <ion-button color="light" size="large" id="hold"><ion-icon name="download-outline"></ion-icon>Vérrouiller</ion-button>
             </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <input type="text" id="winningScore">
+            </ion-col>
           </ion-row>                       
       <ion-row>
         <ion-col>
-          <img src="/images/dice-4.png" alt="Dice" id="dice1">  
+          <img src="/images/dice-4.png" alt="Dice" class="dice" id="dice1">  
         </ion-col>
       </ion-row>
     </ion-grid>
