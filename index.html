@@ -4,11 +4,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
-  <script src="script.js"></script>
-  <title>Jeu de hasard</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Jeu de dé</title>
 </head>
 <body>
-  
-</body>
-</html>
+  <ion-grid>
+    <!-- Plateau joueur -->
+        <ion-row>
+          <ion-col>
+            <div class="player-0-panel">
+              <div class="player-name" id="nom-0">JOUEUR 1</div>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="player-1-panel">
+              <div class="player-name" id="nom-1">JOUEUR 2</div>
+            </div>
+          </ion-col>              
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="player-0-score" id="score-0">20</div>
+          </ion-col>
+          <ion-col>
+            <div class="player-1-score" id="score-1">50</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="player-current-box" id="current-box-0">
+              <div class="player-current-label">RESULTAT</div>
+              <div class="player-current-score" id="current-0">0</div>                  
+            </div>                  
+          </ion-col>
+          <ion-col>          
+            <div class="player-current-box" id="current-box-1">
+              <div class="player-current-label">RESULTAT</div>
+              <div class="player-current-score" id="current-1">0</div>
+            </div>
+            </ion-col>              
+          </ion-row>
+          <ion-row">
+            <ion-col>
+                <ion-button color="light" size="large" id="new-game"><ion-icon name="add-circle-outline"></ion-icon>Nouveau jeu</ion-button>          
+            </ion-col>
+            <ion-col>              
+              <ion-button color="light" size="large" id="roll"><ion-icon name="sync-outline"></ion-icon>Lancer le dé</ion-button>
+            </ion-col>       
+            <ion-col>                  
+              <ion-button color="light" size="large" id="hold"><ion-icon name="download-outline"></ion-icon>Vérrouiller</ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <input type="text" id="winningScore">
+            </ion-col>
+          </ion-row>                       
+      <ion-row>
+        <ion-col>
+          <img src="/images/dice-4.png" alt="Dice" class="dice" id="dice1">  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
