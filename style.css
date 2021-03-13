@@ -27,67 +27,65 @@ body {
 
 #nom-0 {
   position: relative;
-  top: 300px;
-  left: 500px;
+  top: 100px;
+  left: 200px;
 }
 
 #nom-1 {
   position: relative;
-  top: 300px;
-  left: 500px;
+  top: 100px;
+  left: 400px;
 }
 
 #score-0 {
   position: relative;
-  top: 350px;
-  left: 550px;
+  top: 150px;
+  left: 250px;
 }
 
 #score-1 {
   position: relative;
-  top: 350px;
-  left: 550px;
+  top: 150px;
+  left: 450px;
 
 }
 
 #current-box-0 {
   position: relative;
-  top: 800px;
-  left: 510px;
+  top: 500px;
+  left: 210px;
 }
 
 #current-box-1 {
   position: relative;
-  top: 800px;
-  left: 510px;
+  top: 500px;
+  left: 410px;
 }
 
 #new-game {
   position: relative;
-  top: 80px;
-  left: 1000px;
+  left: 900px;
   font-size: 30px;
   
 }
 
 #roll {
   position: relative;
-  top: 500px;
-  left: 645px;
+  top: 400px;
+  left: 550px;
   font-size: 30px;
 }
 
 #hold {
   position: relative;
-  top: 700px;
-  left: 295px;
+  top: 550px;
+  left: 195px;
   font-size: 30px;
 }
 
 img {
   position: relative;
-  top: 130px;
-  left: 1070px;
+  left: 980px;
 }
 
 .active {
@@ -101,6 +99,6 @@ img {
 
 input {
   position: relative;
-  top: 750px;
-  left: 1100px;
+  top: 600px;
+  left: 990px;
 }
