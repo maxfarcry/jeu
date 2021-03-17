@@ -1,104 +1,187 @@
 body {
   font-family: lato;
-  background-color: #e6e6e6;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+  url(/images/background\ dice.jpg);
+
+ 
 }
 
-.player-name {
+.player-name, .player-0-score, .player-1-score {
   font-size: 50px;
+  padding: 90px 0 5px;
 }
 
-.player-current-box {
-  box-sizing: content-box;
-  width: 170px;
-  height: 80px;
-  text-align: center;
-  background-color:#ff4d4d;
-  font-size: 30px;
-  color: white;
+.player-0-panel, .player-1-panel {
+  background-color: #b3b3b3;  
 }
 
-.player-0-score, .player-1-score{
-  font-size: 50px;
+.player-0-panel {
+  height: 650px;
 }
 
-.player-current-score {
-  font-size: 30px;
-}
-
-#nom-0 {
-  position: relative;
-  top: 100px;
-  left: 200px;
-}
-
-#nom-1 {
-  position: relative;
-  top: 100px;
-  left: 400px;
-}
-
-#score-0 {
-  position: relative;
-  top: 150px;
-  left: 250px;
-}
-
-#score-1 {
-  position: relative;
-  top: 150px;
-  left: 450px;
-
-}
-
-#current-box-0 {
-  position: relative;
-  top: 500px;
-  left: 210px;
-}
-
-#current-box-1 {
-  position: relative;
-  top: 500px;
-  left: 410px;
+.player-1-panel {
+  height: 650px;
+  margin: 5px;
 }
 
 #new-game {
-  position: relative;
-  left: 900px;
-  font-size: 30px;
-  
+  position: absolute;
+  top: -200px;
+  left: 30%;
+  right: 30%;
+}
+
+#roll, #hold, #new-game {
+  font-size: 25px;
+  height: 60px;
 }
 
 #roll {
-  position: relative;
-  top: 400px;
-  left: 550px;
-  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 10px;
+  right: 62%;
 }
 
 #hold {
-  position: relative;
-  top: 550px;
-  left: 195px;
-  font-size: 30px;
+  position: absolute;
+  z-index: 1;
+  top: -20px; 
+  left: 65%;  
+  right: 1px;
 }
 
 img {
-  position: relative;
-  left: 980px;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  top: -80px;
+  left: 43%; 
+}
+
+.player-current-box {
+  background-color: #ff3333; 
+  margin: 20px 100px;
+  color: #ffffff;
+  height: 70px;
+  font-size: 30px;
 }
 
 .active {
-  color: #ff4d4d;
+  color: #ffffff;
+  background-image: linear-gradient(
+    to right,
+    #b3b3b3,
+    #262626
+  );
 }
 
 .winner .player-name{
   font-weight: 300;
-  color: #ff4d4d;
+  color: #ff3333;
+}
+
+ion-col {
+  text-align: center;
 }
 
 input {
-  position: relative;
-  top: 600px;
-  left: 990px;
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .player-name, .player-0-score, .player-1-score {
+    font-size: 30px;
+    padding: 30px 20px 10px;
+  }
+  .player-0-panel {
+    width: auto;
+    height: 320px;
+  }
+  .player-1-panel { 
+    width: auto; 
+    margin: 5px;
+    height: 320px;
+  }
+  #new-game {
+    position: absolute;
+    top: -100px;
+    left: 30%;
+    right: 30%;
+    
+  }
+  #roll, #hold, #new-game {
+    font-size: 30px;    
+  }
+ 
+  #roll {
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: 10px;
+    right: 62%;
+  }
+  #hold {
+    position: absolute;
+    z-index: 1;
+    top: -7px; 
+    left: 65%;  
+    right: 1px;
+
+  }
+  img {
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    top: -30px;
+    left: 40%; 
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+  .player-name, .player-0-score, .player-1-score {
+    font-size: 50px;
+    padding: 40px 0 30px;
+  }
+  .player-0-panel {
+    width: auto;
+    height: 510px;
+  }
+  .player-1-panel {
+    margin: 5px;
+    width: auto;
+    height: 510px;
+  }
+  #new-game {
+    position: absolute;
+    top: -100px;
+    left: 30%;
+    right: 30%;
+  }
+  #roll, #hold, #new-game {
+    font-size: 15px;
+  }
+  #roll {
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    left: 1px;
+    right: 60%;
+   
+  }
+  #hold {
+    position: absolute;
+    z-index: 1;
+    top: -7px;   
+    right: 1px;
+    left: 62%;
+  }
+  img {
+    position: absolute;
+    z-index: 1;
+    width: 80px;
+    top: -30px;
+    left: 45%;
+  }
 }

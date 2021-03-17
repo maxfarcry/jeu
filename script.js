@@ -44,9 +44,7 @@ document.getElementById('hold').addEventListener('click', function () {
 
     if (scores[activePlayer] >= winningScore) {
 
-      document.querySelector('#nom-' + activePlayer).textContent = 'Winner!';
-
-      document.getElementById('dice1').style.display = 'none';     
+      document.querySelector('#nom-' + activePlayer).textContent = 'Winner!';    
 
       document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
 
@@ -72,7 +70,6 @@ function init() {
 
   roundScore = 0;
 
-  document.getElementById('dice1').style.display = 'none';
  
   document.getElementById('score-0').textContent = '0';
   document.getElementById('score-1').textContent = '0';
@@ -104,7 +101,7 @@ function nextPlayer() {
   document.querySelector('.player-0-panel').classList.toggle('active');
   document.querySelector('.player-1-panel').classList.toggle('active');
 
-  document.getElementById('dice1').style.display = 'none';
+
 
 
 };

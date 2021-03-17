@@ -12,61 +12,46 @@
   <title>Jeu de dé</title>
 </head>
 <body>
+
   <ion-grid>
     <!-- Plateau joueur -->
-        <ion-row>
-          <ion-col>
-            <div class="player-0-panel">
-              <div class="player-name" id="nom-0">JOUEUR 1</div>
-            </div>
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="12" size-xl>
+            <div class="player-0-panel active">
+                <div class="player-name" id="nom-0">JOUEUR 1</div>
+                <div class="player-0-score" id="score-0">20</div>      
+                  <div class="player-current-box" id="current-box-0">
+                    <div class="player-current-label">RESULTAT</div>
+                    <div class="player-current-score" id="current-0">0</div>                        
+                  </div>   
+                </div>
           </ion-col>
-          <ion-col>
-            <div class="player-1-panel">
-              <div class="player-name" id="nom-1">JOUEUR 2</div>
-            </div>
-          </ion-col>              
+        </ion-row>     
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="12" size-sm>
+            <ion-button color="light" id="new-game"><ion-icon name="add-circle-outline"></ion-icon>Nouveau jeu</ion-button>          
+            <img src="/images/dice-4.png" alt="Dice" class="dice" id="dice1">  
+            <ion-button color="light" id="roll"><ion-icon name="sync-outline"></ion-icon>Lancer le dé</ion-button>
+            <ion-button color="light" id="hold"><ion-icon name="download-outline"></ion-icon>Verrouiller</ion-button>
+          </ion-col>
         </ion-row>
-        <ion-row>
-          <ion-col>
-            <div class="player-0-score" id="score-0">20</div>
-          </ion-col>
-          <ion-col>
-            <div class="player-1-score" id="score-1">50</div>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <div class="player-current-box" id="current-box-0">
-              <div class="player-current-label">RESULTAT</div>
-              <div class="player-current-score" id="current-0">0</div>                  
-            </div>                  
-          </ion-col>
-          <ion-col>          
+        <ion-col size="12" size-sm>
+          <div class="player-1-panel">
+            <div class="player-name" id="nom-1">JOUEUR 2</div>
+            <div class="player-1-score" id="score-1">0</div>
             <div class="player-current-box" id="current-box-1">
               <div class="player-current-label">RESULTAT</div>
               <div class="player-current-score" id="current-1">0</div>
             </div>
-            </ion-col>              
-          </ion-row>
-          <ion-row">
-            <ion-col>
-                <ion-button color="light" size="large" id="new-game"><ion-icon name="add-circle-outline"></ion-icon>Nouveau jeu</ion-button>          
-            </ion-col>
-            <ion-col>              
-              <ion-button color="light" size="large" id="roll"><ion-icon name="sync-outline"></ion-icon>Lancer le dé</ion-button>
-            </ion-col>       
-            <ion-col>                  
-              <ion-button color="light" size="large" id="hold"><ion-icon name="download-outline"></ion-icon>Verrouiller</ion-button>
-            </ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col>
-              <input type="text" id="winningScore">
-            </ion-col>
-          </ion-row>                       
+          </div>
+        </ion-col>              
+        <ion-row>
+          <ion-col>
+            <input type="text" id="winningScore">
+          </ion-col>
+        </ion-row>                       
       <ion-row>
         <ion-col>
-          <img src="/images/dice-4.png" alt="Dice" class="dice" id="dice1">  
         </ion-col>
       </ion-row>
     </ion-grid>
