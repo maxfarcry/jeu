@@ -1,7 +1,8 @@
 var scores, roundScore, activePlayer, prevDiceRoll, gamePlaying, winningScore;
 
+/* Début du jeu */
 init();
-
+/* Action du bouton Lancer le dé*/
 document.getElementById('roll').addEventListener('click', function(){
   if (gamePlaying) {
     var diceRandom = Math.floor(Math.random() * 6) + 1;
@@ -25,6 +26,7 @@ document.getElementById('roll').addEventListener('click', function(){
   }
 });
 
+/* Action du bouton verrouiller */
 document.getElementById('hold').addEventListener('click', function () {
 
   if (gamePlaying) {
@@ -58,6 +60,7 @@ document.getElementById('hold').addEventListener('click', function () {
   }
 });
 
+/* Actio du bouton Nouveau jeu*/
 document.getElementById('new-game').addEventListener('click', init);
 
 function init() {

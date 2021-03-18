@@ -1,18 +1,18 @@
+/* GENERAL */
 body {
   font-family: lato;
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-  url(/images/background\ dice.jpg);
-
- 
+  url(/images/background\ dice.jpg); 
 }
 
 .player-name, .player-0-score, .player-1-score {
   font-size: 50px;
   padding: 90px 0 5px;
+ 
 }
 
 .player-0-panel, .player-1-panel {
-  background-color: #b3b3b3;  
+  background-color: #9db6b5;  
 }
 
 .player-0-panel {
@@ -61,7 +61,7 @@ img {
 }
 
 .player-current-box {
-  background-color: #ff3333; 
+  background-color: #1a4a4b; 
   margin: 20px 100px;
   color: #ffffff;
   height: 70px;
@@ -69,11 +69,11 @@ img {
 }
 
 .active {
-  color: #ffffff;
+
   background-image: linear-gradient(
     to right,
-    #b3b3b3,
-    #262626
+    #f5f0e3,
+    #dfc7bf
   );
 }
 
@@ -90,6 +90,7 @@ input {
   display: none;
 }
 
+/* Modification de l'affichage pour mobile */
 @media screen and (max-width: 450px) {
   .player-name, .player-0-score, .player-1-score {
     font-size: 30px;
@@ -145,6 +146,7 @@ input {
   }
 }
 
+/* Modification de l'affichage pour tablette */
 @media screen and (min-width: 451px) and (max-width: 1024px) {
   .player-name, .player-0-score, .player-1-score {
     font-size: 50px;
